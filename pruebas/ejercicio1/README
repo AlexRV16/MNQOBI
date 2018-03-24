@@ -1,0 +1,14 @@
+Alexis Rojas Vazquez
+
+Correo electronico: Alex_rko79@hotmail.com
+
+
+Instrucciones: Al ejecutar el programa se le solicitara elegir si desea convertir Texto a codigo morse, o Codigo morse a texto.
+indicar con la opcion numerica deseada ya sea (1) o (2).
+Posteriormente ingresar la cadena de texto a traducir, para que esta sea traducida; o en caso de que traduzca codigo morse ingresar
+el codigo morse a traducir teniendo en cuenta estas consideraciones...
+*Cada letra (en morse) será separada con un espacio
+*Cada palabra (en morse) será separada por 3 espacios
+
+Nota, al convetir texto a codigo morse no se considera la letra "Ñ/ñ" ya que esta no tiene una traduccion en codigo morse por ende
+esta automaticamente sera considerada como letra "N/n".
