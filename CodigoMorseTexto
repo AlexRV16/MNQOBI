@@ -1,0 +1,201 @@
+import java.util.Scanner;
+
+public class PruebasMNQOBI {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println("Desea convertir texto a codigo Morse (1) \nDesea convertir Codigo Morse a texto (2)");
+        Scanner op1 = new Scanner(System.in);
+        int opccion1 = op1.nextInt();
+
+        switch (opccion1) {
+            case 1:
+                System.out.println("Favor de introducir la cadena de texto a convertir:");
+                Scanner sct = new Scanner(System.in);
+                String cadenat = sct.nextLine();
+                String r = cadenat.toLowerCase().
+                        replaceAll(" ", "  ").
+                        replaceAll("a", ".- ").
+                        replaceAll("b", "-... ").
+                        replaceAll("c", "-.-. ").
+                        replaceAll("d", "-.. ").
+                        replaceAll("e", ". ").
+                        replaceAll("f", "..-. ").
+                        replaceAll("g", "--. ").
+                        replaceAll("h", ".... ").
+                        replaceAll("i", ".. ").
+                        replaceAll("j", ".--- ").
+                        replaceAll("k", "-.- ").
+                        replaceAll("l", ".-.. ").
+                        replaceAll("m", "-- ").
+                        replaceAll("n", "-. ").
+                        replaceAll("o", "--- ").
+                        replaceAll("p", ".--. ").
+                        replaceAll("q", "--.- ").
+                        replaceAll("r", ".-. ").
+                        replaceAll("s", "... ").
+                        replaceAll("t", "- ").
+                        replaceAll("u", "..- ").
+                        replaceAll("v", "...- ").
+                        replaceAll("w", ".-- ").
+                        replaceAll("x", "-..- ").
+                        replaceAll("y", "-.-- ").
+                        replaceAll("z", "--.. ").
+                        replaceAll("0", "----- ").
+                        replaceAll("1", ".---- ").
+                        replaceAll("2", "..--- ").
+                        replaceAll("3", "...-- ").
+                        replaceAll("4", "....- ").
+                        replaceAll("5", "..... ").
+                        replaceAll("6", "-.... ").
+                        replaceAll("7", "--... ").
+                        replaceAll("8", "---.. ").
+                        replaceAll("9", "----. ");
+                        
+                System.out.println(r);
+
+                break;
+
+            case 2:
+                System.out.println("Favor de introducir el codigo Morse a convertir:");
+                Scanner scm = new Scanner(System.in);
+                String cadenam = scm.nextLine();
+                String[] p = cadenam.split("   ");
+                String[] l = cadenam.replaceAll("   ", " ").split(" ");
+                String R = "";
+                String res = "";
+                String result = "";
+                for (int ii = 0; ii < p.length; ii++) {
+                    String pal = p[ii];
+                    String letras[] = pal.split(" ");
+                    R = "";
+                    for (int i = 0; i < letras.length; i++) {
+                        String let = letras[i];
+                        switch (let) {
+                            case ".-":
+                                res = "a";
+                                break;
+                            case "-...":
+                                res = "b";
+                                break;
+                            case "-.-.":
+                                res = "c";
+                                break;
+                            case "-..":
+                                res = "d";
+                                break;
+                            case ".":
+                                res = "e";
+                                break;
+                            case "..-.":
+                                res = "f";
+                                break;
+                            case "--.":
+                                res = "g";
+                                break;
+                            case "....":
+                                res = "h";
+                                break;
+                            case "..":
+                                res = "i";
+                                break;
+                            case ".---":
+                                res = "j";
+                                break;
+                            case "-.-":
+                                res = "k";
+                                break;
+                            case ".-..":
+                                res = "l";
+                                break;
+                            case "--":
+                                res = "m";
+                                break;
+                            case "-.":
+                                res = "n";
+                                break;
+                            case "---":
+                                res = "o";
+                                break;
+                            case ".--.":
+                                res = "p";
+                                break;
+                            case "--.-":
+                                res = "q";
+                                break;
+                            case ".-.":
+                                res = "r";
+                                break;
+                            case "...":
+                                res = "s";
+                                break;
+                            case "-":
+                                res = "t";
+                                break;
+                            case "..-":
+                                res = "u";
+                                break;
+                            case "...-":
+                                res = "v";
+                                break;
+                            case ".--":
+                                res = "w";
+                                break;
+                            case "-..-":
+                                res = "x";
+                                break;
+                            case "-.--":
+                                res = "y";
+                                break;
+                            case "--..":
+                                res = "z";
+                                break;
+                            case "-----":
+                                res = "0";
+                                break;
+                            case ".----":
+                                res = "1";
+                                break;
+                            case "..---":
+                                res = "2";
+                                break;
+                            case "...--":
+                                res = "3";
+                                break;
+                            case "....-":
+                                res = "4";
+                                break;
+                            case ".....":
+                                res = "5";
+                                break;
+                            case "-....":
+                                res = "6";
+                                break;
+                            case "--...":
+                                res = "7";
+                                break;
+                            case "---..":
+                                res = "8";
+                                break;
+                            case "----.":
+                                res = "9";
+                                break;
+                        }
+                        R += res;
+
+                    }
+
+                    result += R + " ";
+                }
+
+                System.out.println(result);
+
+                break;
+
+            default:
+                System.err.println("Favor de introducir un valor valido, Gracias");
+        }
+    }
+
+}
+
