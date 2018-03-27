@@ -1,0 +1,17 @@
+Alexis Rojas Vazquez
+
+Correo electrónico: Alex_rko79@hotmail.com
+
+Instrucciones: Al ejecutar el programa se le solicitara ingresar la medida de uno de los lados del cuadrado expresada en centimetros, esta
+medida sera igual tomada para la representacion del cubo.
+Posteriormente se le mostrara un menu de opcciones enumeradas del 1 al 6 para que se realice el calculo deseado; una vez elegido el calculo
+nos dara un resultado de este y nos mostrara dos opcciones ya sea para realizar otro calculo con la medida que se esta manejando, o ingresar
+otra medida.
+En caso de elegir "Realizar otro calculo" nos mostrara el menu anterior para poder elegir entre los calculos disponibles, mostrandonos en la
+parte superior del menu la medida con la cual estamos realizando los calculos.
+En caso de elegir "Ingresar otra medida" nos solicitara nuevamente ingresar la medida de uno de los lados, para posteriormente realizar los
+calculos deseados.
+En caso de haber terminado de realizar los calculos deseados, podremos seleccionar la opccion "salir" en el menu principal, para de este modo
+salir del sistema.
+
+Nota: La medida puede ser de numeros enteros, y tambien puede incluir decimales.
