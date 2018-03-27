@@ -1,0 +1,21 @@
+Alexis Rojas Vazquez
+Correo electrónico: Alex_rko79@hotmail.com
+
+Instrucciones: Al ejecutar el programa se le solicitara ingresar un numero entero en formato arábigo; este tiene que se mayor a 0 y menor o igual 1000.
+En caso de ingresar un numero fuera de este rango, se le notificara del error y le solicitara un numero dentro del rango indicado.
+Al ingresar un numero dentro del rango indicado, este se nos mostrara en su notación romana en la parte de abajo; con leyenda…” El numero traducido en notación romana es:”; seguido en el siguiente renglón veremos el numero en notación romana.
+Considerando los siguientes valores:
+	I=1
+	V=5
+	X=10
+	L=50
+	C=100
+	D=500
+	M=1000
+Así como también se tendrá en cuenta lo siguiente:
+•	Los números romanos I, X, C y M pueden repetirse hasta tres veces a la hora de escribir un número romano compuesto.
+•	Los números romanos V, L y D no pueden repetirse nunca.
+•	Si un número romano compuesto tiene un número a la derecha menor que el de la izquierda entonces se suman ambos. Ejemplo:
+XI: el número de la derecha (I = 1) es menor que el de la izquierda (X = 10) entonces se suman, es decir XI = 11
+•	Si un número romano compuesto tiene un número a la derecha mayor que el de la izquierda y éste es un I, X o C, entonces se resta el de la izquierda al de la derecha. Ejemplo:
+IX: el número de la derecha (X = 10) es mayor que el de la izquierda (I = 1) y además este es I luego se resta el de la izquierda al de la derecha, es decir IX = 9
